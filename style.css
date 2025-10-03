@@ -5,29 +5,43 @@
     /* background-color: #bdb6b6; */
 }
 
+body {
+    background-color: #1e1e1e;
+}
+
 .header {
-    background-color: yellow;
+    padding: 20px 0;
+    background-color: grey;
+
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
 .logo {
-    background-color: orange;
+    width: px;
+    /* background-color: orange; */
     display: inline-block;
+    vertical-align: middle;
+}
+
+.header__wrapper {
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header__nav {
     vertical-align: middle;
-    background-color: pink;
     display: inline-block;
+    margin-left: 400px;
 }
 
 .header__item {
     display: inline-block;
+    margin-left: 20px;
 }
 
 .header__list {
@@ -35,6 +49,8 @@
 }
 
 .header__link {
+    font-size: 20px;
+    color: black;
     text-decoration: none;
 }
 
