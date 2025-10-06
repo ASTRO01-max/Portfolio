@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #1e1e1e;
+    background-color: #ffffff;
 }
 
 .header {
@@ -36,7 +36,7 @@ body {
 .header__nav {
     vertical-align: middle;
     display: inline-block;
-    margin-left: 400px;
+    margin-left: 300px;
 }
 
 .header__item {
@@ -52,5 +52,77 @@ body {
     font-size: 20px;
     color: black;
     text-decoration: none;
+    padding: 15px;
 }
 
+.header__link:hover {
+    color: white;
+    background-color: gold;
+    border-radius: 25px;
+    transition: 0.4s;
+}
+ 
+.about {
+    text-align: center;     
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.about__wrapper {
+    
+}
+
+.about__title {
+    color: rgb(115, 102, 102);
+    font-family: Inter;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.about__text {
+    color: rgb(115, 102, 102);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin: 20px 0 40px;
+}
+
+.about__img {
+    display: inline-block;  
+    vertical-align: middle; 
+    margin-right: 30px;     
+}
+
+.about__img img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.about__info {
+    display: inline-block;  
+    vertical-align: middle; 
+    text-align: left;       
+    max-width: 500px;
+}
+
+.about__btn {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    padding: 12px 25px;
+    border: 2px solid grey;
+    border-radius: 25px;
+    transition: 0.3s ease-in-out;
+    display: inline-block;  
+    margin-top: 40px;    
+}
+
+.about__btn:hover {
+    color: white;
+    background-color: grey;
+}
