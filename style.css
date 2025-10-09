@@ -2,17 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* background-color: #bdb6b6; */
-}
-
-body {
-    background-color: #ffffff;
 }
 
 .header {
     padding: 20px 0;
     background-color: grey;
-
 }
 
 .container {
@@ -22,35 +16,29 @@ body {
 }
 
 .logo {
-    width: px;
-    /* background-color: orange; */
-    display: inline-block;
-    vertical-align: middle;
+    width: 400px;
 }
 
 .header__wrapper {
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .header__nav {
-    vertical-align: middle;
-    display: inline-block;
-    margin-left: 300px;
-}
-
-.header__item {
-    display: inline-block;
-    margin-left: 20px;
+    display: flex;
+    gap: 20px;
 }
 
 .header__list {
-    list-style: none;    
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
 .header__link {
     font-size: 20px;
-    color: black;
+    color: gold;
     text-decoration: none;
     padding: 15px;
 }
@@ -59,17 +47,14 @@ body {
     color: white;
     background-color: gold;
     border-radius: 25px;
-    transition: 0.4s;
-}
- 
-.about {
-    text-align: center;     
-    padding: 60px 0;
-    background-color: #fff;
+    transition: 0.3s ease-in-out;
+
 }
 
-.about__wrapper {
-    
+.about {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f3f3f3;
 }
 
 .about__title {
@@ -81,6 +66,11 @@ body {
     line-height: normal;
 }
 
+.about__title:hover {
+    color: gold;
+    transition: 0.3s;
+}
+
 .about__text {
     color: rgb(115, 102, 102);
     font-family: Inter;
@@ -88,25 +78,33 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-
     margin: 20px 0 40px;
 }
 
-.about__img {
-    display: inline-block;  
-    vertical-align: middle; 
-    margin-right: 30px;     
+.about__text:hover {
+    color: gold;
+    transition: 0.3s;
 }
 
-.about__img img {
-    width: 400px;
+.about__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about__right {
+    border-radius: 50px;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.about__right img {
+    width: 500px;
     border-radius: 10px;
 }
 
 .about__info {
-    display: inline-block;  
-    vertical-align: middle; 
-    text-align: left;       
+    text-align: left;
     max-width: 500px;
 }
 
@@ -118,11 +116,19 @@ body {
     border: 2px solid grey;
     border-radius: 25px;
     transition: 0.3s ease-in-out;
-    display: inline-block;  
-    margin-top: 40px;    
+    display: inline-block;
+    margin-top: 40px;
 }
 
 .about__btn:hover {
     color: white;
     background-color: grey;
+    box-shadow: 7px 7px 0px black;
 }
+
+.about__right:hover {
+    box-shadow:
+        gold 0px 30px 60px -12px,
+        gold 0px 18px 36px -18px;
+}
+
