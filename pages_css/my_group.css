@@ -17,6 +17,12 @@
 
 .logo {
     width: 400px;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    transition: 0.5s;
+    transform: scale(1.19);
 }
 
 .header__wrapper {
@@ -50,3 +56,76 @@
     transition: 0.3s ease-in-out;
 
 }
+
+.group {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.group__title {
+    color: rgb(115, 102, 102);
+    font-family: Inter;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.group__title:hover {
+    color: gold;
+    transition: 0.3s;
+    transform: scale(1.03);
+}
+
+.group__text {
+    color: rgb(115, 102, 102);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 20px 0 40px;
+}
+
+.group__text:hover {
+    color: gold;
+    transition: 0.3s;
+    transform: scale(1.03);
+}
+
+.group__right {
+    border-radius: 50px;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    box-shadow: 24px 24px 24px rgba(0, 0, 0, 0.3);
+}
+
+.group__right img {
+    width: 500px;
+    border-radius: 10px;
+}
+
+.group__right:hover {
+    transform: scale(1.03);
+    box-shadow:
+        gold 0px 30px 60px -12px,
+        gold 0px 18px 36px -18px;
+}
+
+
+.group__info {
+    text-align: left;
+    max-width: 500px;
+}
+
+.group__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.table {
+    text-align: center;
+    padding: 80px 0;
+}
+

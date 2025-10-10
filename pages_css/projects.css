@@ -17,6 +17,12 @@
 
 .logo {
     width: 400px;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    transition: 0.5s;
+    transform: scale(1.19);
 }
 
 .header__wrapper {
@@ -50,3 +56,5 @@
     transition: 0.3s ease-in-out;
 
 }
+
+

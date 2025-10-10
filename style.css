@@ -17,6 +17,12 @@
 
 .logo {
     width: 400px;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    transition: 0.5s;
+    transform: scale(1.19);
 }
 
 .header__wrapper {
@@ -69,6 +75,7 @@
 .about__title:hover {
     color: gold;
     transition: 0.3s;
+    transform: scale(1.03);
 }
 
 .about__text {
@@ -84,6 +91,7 @@
 .about__text:hover {
     color: gold;
     transition: 0.3s;
+    transform: scale(1.03);
 }
 
 .about__wrapper {
@@ -96,6 +104,7 @@
     border-radius: 50px;
     overflow: hidden;
     transition: 0.3s ease-in-out;
+    box-shadow: 24px 24px 24px rgba(0, 0, 0, 0.3);
 }
 
 .about__right img {
@@ -110,7 +119,7 @@
 
 .about__btn {
     font-size: 20px;
-    color: black;
+    color: rgb(115, 102, 102);
     text-decoration: none;
     padding: 12px 25px;
     border: 2px solid grey;
@@ -118,6 +127,7 @@
     transition: 0.3s ease-in-out;
     display: inline-block;
     margin-top: 40px;
+    box-shadow: 14px 14px 0px rgba(0, 0, 0, 0.3);
 }
 
 .about__btn:hover {
@@ -127,6 +137,7 @@
 }
 
 .about__right:hover {
+    transform: scale(1.03);
     box-shadow:
         gold 0px 30px 60px -12px,
         gold 0px 18px 36px -18px;

@@ -1,36 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Family</title>
-    <!-- css link -->
-    <link rel="stylesheet" href="/pages_css/family.css">
-    <!-- site logo -->
-    <link rel="shortcut icon" href="/src/logo.svg" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oilam</title>
+    <link rel="stylesheet" href="/pages_css/family.css" />
 </head>
+
 <body>
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
                 <div class="logo">
-                    <img src="/src/logo.svg" alt="logo">
+                    <img src="/src/logo.svg" alt="logo" />
                 </div>
-
                 <nav class="header__nav">
                     <ul class="header__list">
-                        <li class="header__item">
-                            <a href="/index.html" class="header__link">Men haqimda</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="./family.html" class="header__link">Mening oilam</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="./my_group.html" class="header__link">Mening guruhim</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="./projects.html" class="header__link">Loyihalarim</a>
-                        </li>
+                        <li><a href="/index.html" class="header__link">Men haqimda</a></li>
+                        <li><a href="./family.html" class="header__link active">Mening oilam</a></li>
+                        <li><a href="./my_group.html" class="header__link">Mening guruhim</a></li>
+                        <li><a href="./projects.html" class="header__link">Loyihalarim</a></li>
                     </ul>
                 </nav>
             </div>
@@ -39,18 +29,67 @@
 
     <main>
         <section class="family">
-        <h2 class="family__title">Oilam</h2>
-        <div class="family__wrapper">
-            <div class="about__info">
-                <h2 class="about__title">Salom. Men Muhammad Yusuf</h2>
-                <p class="about__text">Yoshim 16, PDP Schoolning 11 C sinfida o’qiman. Men Backend va Frontendga qiziqaman.</p>
-            </div>
+            <div class="container">
+                <h2 class="family__title">Oilam</h2>
 
-            <div class="about__img">
-                <img src="/src/photo_2025-10-03_12-31-38.jpg" alt="img" class="my__img">
+                <!-- Men -->
+                <div class="family__row">
+                    <div class="family__info">
+                        <h2 class="about__title">Salom. Men Muhammad Yusuf</h2>
+                        <p class="about__text">Yoshim 16, PDP Schoolning 11 C sinfida o’qiman. Men Backend va Frontendga qiziqaman.</p>
+                    </div>
+                    <div class="family__img">
+                        <img src="/src/photo_2025-10-03_12-31-38.jpg" alt="men" class="my__img">
+                    </div>
+                </div>
+
+                <!-- Otam -->
+                <div class="family__row reverse">
+                    <div class="family__img">
+                        <img src="/src/father.jpg" alt="otam" class="my__img">
+                    </div>
+                    <div class="family__info">
+                        <h2 class="about__title">Mening otam</h2>
+                        <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum incidunt sed dolorem neque laudantium assumenda eaque recusandae in dicta voluptates.</p>
+                    </div>
+                </div>
+
+                <!-- Onam -->
+                <div class="family__row">
+                    <div class="family__info">
+                        <h2 class="about__title">Mening onam</h2>
+                        <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum incidunt sed dolorem neque laudantium assumenda eaque recusandae in dicta voluptates.</p>
+                    </div>
+                    <div class="family__img">
+                        <img src="/src/mother.jpg" alt="onam" class="my__img">
+                    </div>
+                </div>
+
+                <!-- Albom -->
+                <h2 class="album__title">Rasmli Albom</h2>
+                <div class="album">
+                    <div class="album__item photo1">
+                      <img src="/src/photo_2025-10-03_12-31-38.jpg" alt="family photo 1">
+                    </div>
+                    <div class="album__item photo2">
+                      <img src="/src/photo_2025-10-03_12-31-38.jpg" alt="family photo 2">
+                    </div>
+                    <div class="album__item photo3">
+                      <img src="/src/photo_2025-10-03_12-31-38.jpg" alt="family photo 3">
+                    </div>
+                    <div class="album__item photo4">
+                      <img src="/src/photo_2025-10-03_12-31-38.jpg" alt="family photo 4">
+                    </div>
+                    <div class="album__item photo5">
+                      <img src="/src/photo_2025-10-03_12-31-38.jpg" alt="family photo 5">
+                    </div>
+                    <div class="album__item photo6">
+                      <img src="/src/photo_2025-10-03_12-31-38.jpg" alt="family photo 6">
+                    </div>
+                  </div>  
             </div>
-        </div>
         </section>
     </main>
 </body>
+
 </html>
