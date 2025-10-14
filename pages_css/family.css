@@ -10,7 +10,13 @@ body {
 
 .header {
     padding: 20px 0;
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.553);
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    backdrop-filter: blur(20px);
+    top: 0;
 }
 
 .container {
@@ -54,6 +60,10 @@ body {
     border-radius: 25px;
     transition: 0.3s;
 }
+
+/* main {
+    height: 400vh;
+} */
 
 .family {
     text-align: center;
