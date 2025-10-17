@@ -65,7 +65,7 @@
 
 .group {
     text-align: center;
-    padding: 20px 0;
+    padding: 70px 0;
 }
 
 .group__title {
@@ -128,6 +128,34 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 20vh;
+}
+
+.teacher__image {
+    border-radius: 50px;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    box-shadow: 24px 24px 24px rgba(0, 0, 0, 0.3);
+}
+
+.teacher__image img {
+    width: 500px;
+    border-radius: 10px;
+}
+
+.teacher__image:hover {
+    transform: scale(1.03);
+    box-shadow:
+        gold 0px 30px 60px -12px,
+        gold 0px 18px 36px -18px;
+}
+
+.teacher__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 80px;
 }
 
 .box {
@@ -290,7 +318,7 @@
     mask-image: linear-gradient(to top, white 20%, transparent 70%);
 }
 
-/* .card__wrapper5:hover::after {
+.card__wrapper5:hover::after {
     content: "";
     position: absolute;
 
@@ -298,12 +326,12 @@
     bottom: -30px;
     top: 0;
     right: -20px;
-    background-image: url("/src/photo_2025-10-03_12-31-38.jpg");
+    background-image: url("/src/20251016_1619_Modern\ Pink\ Transformation_remix_01k7pbv3q3fxdbykpw9s3fr353.png");
     background-size: cover;
     background-position: center;
-    filter: blur(15px);
-    mask-image: linear-gradient(to top, white 20%, transparent 70%);
-} */
+    /* filter: blur(15px);
+    mask-image: linear-gradient(to top, white 20%, transparent 70%); */
+}
 
 .card__title,
 .card__title2,
