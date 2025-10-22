@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <!-- css link -->
+    <title>Loyihalarim</title>
+    <!--  -->
     <link rel="stylesheet" href="/pages_css/projects.css">
-    <!-- site logo -->
+    <!--  -->
     <link rel="shortcut icon" href="/src/logo.svg" type="image/x-icon">
+
 </head>
 <body>
     <header class="header">
@@ -16,28 +17,33 @@
                 <div class="logo">
                     <img src="/src/logo.svg" alt="logo">
                 </div>
-
                 <nav class="header__nav">
                     <ul class="header__list">
-                        <li class="header__item">
-                            <a href="/index.html" class="header__link">Men haqimda</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="./family.html" class="header__link">Mening oilam</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="./my_group.html" class="header__link">Mening guruhim</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="./projects.html" class="header__link">Loyihalarim</a>
-                        </li>
+                        <li><a href="/index.html" class="header__link">Men haqimda</a></li>
+                        <li><a href="./family.html" class="header__link">Mening oilam</a></li>
+                        <li><a href="./my_group.html" class="header__link">Mening guruhim</a></li>
+                        <li><a href="./projects.html" class="header__link active">Loyihalarim</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <h1>Project Page</h1>
-    <a href="/index.html">main page</a>
 
+    <!-- Asosiy loyiha -->
+    <main class="main">
+        <section class="project-center">
+            <div class="project-card">
+                <img src="/src/loyiha.jpg" alt="Frontend loyiha" class="project-image">
+                <h2>FRONTEND LOYIHA</h2>
+                <p>HTML, CSS va animatsiya yordamida tayyorlangan loyiha namunasi</p>
+                <div class="tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">Animatsiya</span>
+                </div>
+                <a target="_blank" href="https://sage-fudge-40042b.netlify.app/" class="project-btn">Loyihani ko'rish</a>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

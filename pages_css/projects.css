@@ -1,45 +1,38 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
-.header {
-    padding: 20px 0;
-    background-color: rgba(128, 128, 128, 0.553);
-    position: sticky;
-    top: 0px;
-    z-index: 10;
+/* Scrollni butunlay o‘chirish */
+html, body {
     width: 100%;
-    backdrop-filter: blur(20px);
+    height: 100%;
+    overflow: hidden; /* scroll yo‘q */
+}
+
+/* Header */
+.header {
+    background-color: rgba(128, 128, 128, 0.4);
+    backdrop-filter: blur(15px);
+    padding: 15px 0;
+    position: absolute;
     top: 0;
-}   
+    width: 100%;
+    z-index: 10;
+}
 
 .container {
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-}
-
-.logo {
-    width: 400px;
-    transition: 0.3s;
-}
-
-.logo:hover {
-    transition: 0.5s;
-    transform: scale(1.19);
 }
 
 .header__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.header__nav {
-    display: flex;
-    gap: 20px;
 }
 
 .header__list {
@@ -49,18 +42,129 @@
 }
 
 .header__link {
-    font-size: 20px;
     color: gold;
     text-decoration: none;
-    padding: 15px;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: 0.3s ease;
 }
 
-.header__link:hover {
+.header__link:hover,
+.header__link.active {
     color: white;
     background-color: gold;
-    border-radius: 25px;
-    transition: 0.3s ease-in-out;
-
+    border-radius: 20px;
 }
 
+/* Markaziy loyiha */
+.main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f6f6f6;
+    padding: 20px;
+    margin-top: 55px;
+}
 
+.project-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Ixcham markaziy karta */
+.project-card {
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    max-width: 520px;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+}
+
+.project-image {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.project-card h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.project-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.tags {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.tag {
+    background-color: #eee;
+    color: #333;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.tag:hover {
+    background-color: gold;
+    color: white;
+}
+
+/* Tugma */
+.project-btn {
+    display: inline-block;
+    background-color: gold;
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.project-btn:hover {
+    background-color: #d4af37;
+    transform: scale(0.95);
+}
+
+/* Responsivlik */
+@media (max-width: 768px) {
+    .project-card {
+        padding: 20px;
+        max-width: 85%;
+    }
+
+    .project-card h2 {
+        font-size: 20px;
+    }
+
+    .project-card p {
+        font-size: 13px;
+    }
+
+    .project-btn {
+        font-size: 13px;
+        padding: 9px 22px;
+    }
+}

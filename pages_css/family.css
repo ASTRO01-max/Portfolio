@@ -12,11 +12,10 @@ body {
     padding: 20px 0;
     background-color: rgba(128, 128, 128, 0.553);
     position: sticky;
-    top: 0px;
+    top: 0;
     z-index: 10;
     width: 100%;
     backdrop-filter: blur(20px);
-    top: 0;
 }
 
 .container {
@@ -31,8 +30,8 @@ body {
 }
 
 .logo:hover {
-    transition: 0.5s;
     transform: scale(1.19);
+    transition: 0.5s;
 }
 
 .header__wrapper {
@@ -61,10 +60,6 @@ body {
     transition: 0.3s;
 }
 
-/* main {
-    height: 400vh;
-} */
-
 .family {
     text-align: center;
     margin-top: 50px;
@@ -89,7 +84,6 @@ body {
     flex: 1;
     text-align: left;
 }
-
 
 .about__title {
     font-size: 36px;
@@ -122,7 +116,9 @@ body {
 .album__title {
     font-size: 42px;
     font-weight: 800;
-    margin-bottom: 80px;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
 }
 
 .album {
@@ -130,39 +126,35 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     margin-top: 40px;
-  }
-  
-  .album__item {
+    justify-items: center;
+}
+
+.album__item {
     overflow: hidden;
     border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-  }
-  
-  .album__item:hover {
+    width: 350px;
+    height: 350px;
+    /* har bir rasmning o‘lchami */
+}
+
+.album__item:hover {
     transform: scale(1.03);
-  }
-  
-  .album__item img {
+}
+
+.album__item img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
     object-fit: cover;
-  }
-  
-  /* Har bir rasm uchun maxsus balandlik */
-  .photo1 img { height: 367px; }
-  .photo2 img { height: 326px; }
-  .photo3 img { height: 612px; }
-  .photo4 img { height: 579px; }
-  .photo5 img { height: 326px; }
-  .photo6 img { height: 485px; }
-  
-  .album__title {
+    border-radius: 20px;
+}
+
+.album__title {
     font-size: 42px;
     font-weight: 800;
     text-align: center;
     margin-top: 60px;
     margin-bottom: 40px;
-  }
-  
+}

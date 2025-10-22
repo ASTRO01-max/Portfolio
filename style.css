@@ -125,7 +125,8 @@
 }
 
 .about__right img {
-    width: 500px;
+    width: 376px;
+    height: auto;
     border-radius: 10px;
 }
 

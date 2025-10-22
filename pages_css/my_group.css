@@ -194,6 +194,11 @@
     box-shadow: 30px 30px 10px rgba(0, 0, 0, 0.3);
 }
 
+.card__icon{
+
+    color: white;
+}
+
 .text {
     background: rgba(255, 255, 255, 0.15);
     border-radius: 50px;
@@ -326,7 +331,7 @@
     bottom: -30px;
     top: 0;
     right: -20px;
-    background-image: url("/src/20251016_1619_Modern\ Pink\ Transformation_remix_01k7pbv3q3fxdbykpw9s3fr353.png");
+    background-image: url("");
     background-size: cover;
     background-position: center;
     /* filter: blur(15px);
