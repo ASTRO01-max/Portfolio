@@ -169,7 +169,7 @@
 .box__list{
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     text-align: center;     
 }
@@ -245,6 +245,19 @@
     transition: .3s ease-in-out;
 }
 
+
+.card__info6 {
+    z-index: 2;
+    padding: 40px 20px;
+    text-align: center;
+
+    position: relative;
+    bottom: -100%;
+
+    transition: .3s ease-in-out;
+}
+
+
 .card__info:hover,
 .card__info2:hover,
 .card__info3:hover,
@@ -253,14 +266,23 @@
     transform: scale(1.03);
 }
 
+
+.card__info6:hover {
+    transform: scale(1.03);
+}
+
 .card__wrapper:hover .card__info,
 .card__wrapper2:hover .card__info2,
 .card__wrapper3:hover .card__info3,
 .card__wrapper4:hover .card__info4,
-.card__wrapper5:hover .card__info5  {
+.card__wrapper5:hover .card__info5 {
 
     bottom: 0px;
 
+}
+
+.card__wrapper5:hover .card__info6 {
+    bottom: 0px;    
 }
 
 .card__wrapper:hover::after {
@@ -322,7 +344,7 @@
     filter: blur(15px);
     mask-image: linear-gradient(to top, white 20%, transparent 70%);
 }
-/* 
+
 .card__wrapper5:hover::after {
     content: "";
     position: absolute;
@@ -331,23 +353,44 @@
     bottom: -30px;
     top: 0;
     right: -20px;
-    background-image: url("");
+    background-image: url("/src/Salohiddin.JPG");
     background-size: cover;
     background-position: center;
     filter: blur(15px);
     mask-image: linear-gradient(to top, white 20%, transparent 70%);
-} */
+}
+
+.card__wrapper6:hover::after {
+    content: "";
+    position: absolute;
+
+    left: -20px;
+    bottom: -30px;
+    top: 0;
+    right: -20px;
+    background-image: url("/src/Muhammadqodir.JPG");
+    background-size: cover;
+    background-position: center;
+    filter: blur(15px);
+    mask-image: linear-gradient(to top, white 20%, transparent 70%);
+}
+
 
 .card__title,
 .card__title2,
 .card__title3,
 .card__title4,
-.card__title5 {
+.card__title5{
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 20px;
 }
 
+.card__title6 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px; 
+}
 
 .card__btn,
 .card__btn2,
@@ -366,11 +409,29 @@
     transition: all 0.3s ease;
 }
 
+.card__btn6 {
+    background: linear-gradient(180deg, #000, #333);
+    border: none;
+    color: #fff;
+    padding: 12px 0;
+    border-radius: 50px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
 .card__btn:hover,
 .card__btn2:hover,
 .card__btn3:hover,
 .card__btn4:hover,
-.card__btn5:hover  {
+.card__btn5:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.09);
+}
+
+.card__btn6:hover {
     transition: all 0.3s ease;
     transform: scale(1.09);
 }
