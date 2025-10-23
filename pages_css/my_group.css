@@ -169,7 +169,7 @@
 .box__list{
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     text-align: center;     
 }
@@ -322,7 +322,7 @@
     filter: blur(15px);
     mask-image: linear-gradient(to top, white 20%, transparent 70%);
 }
-
+/* 
 .card__wrapper5:hover::after {
     content: "";
     position: absolute;
@@ -334,9 +334,9 @@
     background-image: url("");
     background-size: cover;
     background-position: center;
-    /* filter: blur(15px);
-    mask-image: linear-gradient(to top, white 20%, transparent 70%); */
-}
+    filter: blur(15px);
+    mask-image: linear-gradient(to top, white 20%, transparent 70%);
+} */
 
 .card__title,
 .card__title2,
