@@ -49,18 +49,18 @@
 }
 
 .header__link {
-    font-size: 20px;
     color: gold;
     text-decoration: none;
-    padding: 15px;
+    font-size: 20px;
+    padding: 8px 12px;
+    transition: 0.3s ease;
 }
 
-.header__link:hover {
+.header__link:hover,
+.header__link.active {
     color: white;
     background-color: gold;
-    border-radius: 25px;
-    transition: 0.3s ease-in-out;
-
+    border-radius: 20px;
 }
 
 .group {
