@@ -61,7 +61,7 @@ body {
 /* 3 ustunli grid */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     justify-items: center;
 }
