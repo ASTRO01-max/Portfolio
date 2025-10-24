@@ -135,10 +135,7 @@
     border-radius: 50px;
     overflow: hidden;
     transition: 0.3s ease-in-out;
-    box-shadow: 24px 24px 24px rgba(0, 0, 0, 0.3);
-    box-shadow:
-        gold 0px 30px 60px -12px,
-        gold 0px 18px 36px -18px;   
+    box-shadow: 24px 24px 24px rgba(0, 0, 0, 0.3);  
 }
 
 .about__right img {
@@ -149,6 +146,9 @@
 
 .about__right:hover {
     transform: scale(1.03);
+    box-shadow:
+        gold 0px 30px 60px -12px,
+        gold 0px 18px 36px -18px; 
 }
 
 .about__btn {
